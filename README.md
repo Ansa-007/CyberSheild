@@ -42,6 +42,7 @@ phishing-awareness-training/
 │   ├── quiz.js            # Quiz logic and questions
 │   └── animations.js      # GSAP animations and interactions
 ├── images/                # Image assets
+├── README.md              # Documentation
 └── index.html             # Main HTML file
 ```
 
