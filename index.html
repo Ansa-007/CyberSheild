@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Phishing Awareness Training</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/security-shield.png">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollToPlugin.min.js"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen">
+        <div class="spinner"></div>
+        <p>Loading Phishing Awareness Training...</p>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="progress-container">
+        <div class="progress-bar"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-shield-alt"></i>
+                <span>CyberShield</span>
+            </div>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#phishing-recognition">Recognition</a></li>
+                <li><a href="#social-engineering">Tactics</a></li>
+                <li><a href="#best-practices">Best Practices</a></li>
+                <li><a href="#quiz">Quiz</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container">
+                <h1 class="animate-on-scroll">Phishing Awareness Training</h1>
+                <p class="subtitle animate-on-scroll">Learn to identify and protect yourself from phishing attacks</p>
+                <a href="#phishing-recognition" class="cta-button animate-on-scroll">
+                    Start Learning <i class="fas fa-arrow-down"></i>
+                </a>
+                <div class="scroll-indicator">
+                    <div class="mouse">
+                        <div class="wheel"></div>
+                    </div>
+                    <div class="arrow"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Phishing Recognition Section -->
+        <section id="phishing-recognition" class="section">
+            <div class="container">
+                <h2 class="section-title">Recognizing Phishing Attempts</h2>
+                <div class="recognition-grid">
+                    <div class="recognition-card animate-on-scroll">
+                        <div class="icon"><i class="fas fa-envelope"></i></div>
+                        <h3>Suspicious Emails</h3>
+                        <p>Look for generic greetings, spelling errors, and suspicious sender addresses.</p>
+                        <button class="info-button" onclick="showExample('email')">See Example</button>
+                    </div>
+                    <div class="recognition-card animate-on-scroll">
+                        <div class="icon"><i class="fas fa-link"></i></div>
+                        <h3>Fake Links</h3>
+                        <p>Hover over links to check their actual destination before clicking.</p>
+                        <button class="info-button" onclick="showExample('link')">See Example</button>
+                    </div>
+                    <div class="recognition-card animate-on-scroll">
+                        <div class="icon"><i class="fas fa-exclamation-triangle"></i></div>
+                        <h3>Urgent Requests</h3>
+                        <p>Be cautious of messages creating a sense of urgency or fear.</p>
+                        <button class="info-button" onclick="showExample('urgent')">See Example</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Social Engineering Section -->
+        <section id="social-engineering" class="section">
+            <div class="container">
+                <h2 class="section-title">Social Engineering Tactics</h2>
+                <div class="tactics-container">
+                    <div class="tactic-card animate-on-scroll">
+                        <h3>Pretexting</h3>
+                        <p>Attackers create a fabricated scenario to steal information.</p>
+                    </div>
+                    <div class="tactic-card animate-on-scroll">
+                        <h3>Baiting</h3>
+                        <p>Offering something enticing to trick victims into revealing information.</p>
+                    </div>
+                    <div class="tactic-card animate-on-scroll">
+                        <h3>Quid Pro Quo</h3>
+                        <p>Offering a service or benefit in exchange for information.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Best Practices Section -->
+        <section id="best-practices" class="section">
+            <div class="container">
+                <h2 class="section-title">Best Practices</h2>
+                <div class="practices-container">
+                    <div class="practice-item animate-on-scroll">
+                        <i class="fas fa-check-circle"></i>
+                        <p>Verify sender email addresses before responding</p>
+                    </div>
+                    <div class="practice-item animate-on-scroll">
+                        <i class="fas fa-check-circle"></i>
+                        <p>Never share passwords or sensitive information via email</p>
+                    </div>
+                    <div class="practice-item animate-on-scroll">
+                        <i class="fas fa-check-circle"></i>
+                        <p>Enable two-factor authentication on all accounts</p>
+                    </div>
+                    <div class="practice-item animate-on-scroll">
+                        <i class="fas fa-check-circle"></i>
+                        <p>Keep software and security systems updated</p>
+                    </div>
+                    <div class="practice-item animate-on-scroll">
+                        <i class="fas fa-check-circle"></i>
+                        <p>Be cautious with email attachments</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Quiz Section -->
+        <section id="quiz" class="section">
+            <div class="container">
+                <h2 class="section-title">Test Your Knowledge</h2>
+                <div class="quiz-container animate-on-scroll">
+                    <div id="quiz-question" class="quiz-question"></div>
+                    <div id="quiz-options" class="quiz-options"></div>
+                    <div class="quiz-feedback"></div>
+                    <button id="next-question" class="quiz-button">Next Question</button>
+                    <div class="quiz-progress">
+                        <span id="question-number">1</span> of <span id="total-questions">10</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Phishing Awareness Training. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Custom JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/quiz.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html>
