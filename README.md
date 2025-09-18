@@ -71,7 +71,7 @@ To add or modify quiz questions, edit the `quizQuestions` array in `js/quiz.js`.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) file for details.
 
 ## Acknowledgments
 
